@@ -12,7 +12,7 @@ HOST = "app.speckle.systems"
 TOKEN = os.getenv("SPECKLE_TOKEN")
 PROJECT_ID = "09d6ea6f13"
 VERSION_ID = "ed3daff416"
-ROOT_OBJ_ID = "62d7a1c47777182e4a81bca0aff0512e"
+ROOT_OBJ_ID = "cb3e354871571d23375937356acd0caf"
 
 # auth
 print("Authenticating with Speckle")
@@ -131,3 +131,6 @@ if central_node:
     plt.show()
 else:
     print("Could not find a clean cluster.")
+    
+    
+print(list(G.nodes(data=True))[:5])
